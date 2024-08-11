@@ -1,13 +1,11 @@
-FROM python:3.11
+FROM python:3.9-slim
+WORKDIR /app
 
-RUN apt update -y && apt upgrade -y && \ 
-    apt install -y --no-install-recommends git && \
-    rm -rf /var/lib/apt/lists/* 
-    
-RUN git clone https://github.com/nero-bc/M-T app
-
-WORKDIR app
-
+COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
+COPY . .
+EXPOSE 8000
+
+#CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000"]
 CMD ["python3", "main.py"]
