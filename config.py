@@ -17,10 +17,10 @@ PORT = os.environ.get("PORT", "8080")
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://skiliggeeXporter:skiliggeeXporter@cluster0.tdxtakc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "AdultElixir")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "modijiurl.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "a0c51b7b2b16924757c1e2eb6ca27096f9df7208")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "runurl.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "3a2c084d61d0813b05a00cd9ba564e92e39f92cb")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "86400")) # Add time in seconds
-TUT_VID = os.environ.get("TUT_VID","https://t.me/Anime_Elixir/12")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/Anime_Elixir/8")
 IS_VERIFY = os.environ.get("IS_VERIFY","True")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "400"))
